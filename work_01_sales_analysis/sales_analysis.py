@@ -1,5 +1,5 @@
 # Разбирает строку CSV в список словарей.
-temeshova_parse_csv = lambda temeshova_data: [] if not temeshova_data.strip() else list(
+Temeshova_parse_csv = lambda temeshova_data: [] if not temeshova_data.strip() else list(
     map(
         lambda temeshova_line: dict(
             zip(
@@ -14,7 +14,7 @@ temeshova_parse_csv = lambda temeshova_data: [] if not temeshova_data.strip() el
     )
 )
 # Считает общую выручку.
-temeshova_compute_revenue = lambda temeshova_rows: sum(
+Temeshova_compute_revenue = lambda temeshova_rows: sum(
     map(
         lambda temeshova_row: float(temeshova_row["quantity"])
         * float(temeshova_row["price"]),
@@ -23,7 +23,7 @@ temeshova_compute_revenue = lambda temeshova_rows: sum(
     0.0,
 )
 # Находит строку с максимальной выручкой.
-temeshova_top_item = lambda temeshova_rows: max(
+Temeshova_top_item = lambda temeshova_rows: max(
     temeshova_rows,
     key=lambda temeshova_row: float(temeshova_row["quantity"])
     * float(temeshova_row["price"]),
