@@ -11,3 +11,7 @@ def Temeshova_count_word_frequencies(words: list[str]) -> dict[str, int]:
 def Temeshova_top_word(freq: dict[str, int]):
     "Возвращает самое частое слово или None для пустого словаря."
     return max(freq, key=freq.__getitem__) if freq else None
+
+
+
+print(Temeshova_top_word(Temeshova_count_word_frequencies(Temeshova_split_words("Пёс, кот и КОТ!!!!!!! пёс кот пёс"))))
