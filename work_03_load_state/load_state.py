@@ -52,6 +52,7 @@ def Temeshova_load_users() -> TemeshovaResult[list[TemeshovaUser], str]:
         ]
     )
 
+
 print("Проверка заполненного списка:", Temeshova_load_users())
 print("Проверка пустого списка:", Temeshova_users_result([]))
 
