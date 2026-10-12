@@ -34,7 +34,7 @@ print(
     Temeshova_filter_by_category("vegetable")(
         [
             {"name": "apple", "category": "fruit"},
-            {"name": "carrot", "category": "vegetable"},
+            {"category": "vegetable", "name": "carrot"},
             {"name": "banana", "category": "fruit"},
         ]
     ),
