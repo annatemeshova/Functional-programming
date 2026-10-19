@@ -1,4 +1,5 @@
 from functools import reduce
+
 # Преобразует студентов в строки с именем и оценкой.
 Temeshova_format_students = lambda students: list(
     map(lambda student: (f'Имя: {student["name"]}, Оценка: {student["grade"]}'),students,)
