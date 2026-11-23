@@ -62,3 +62,4 @@ print("SUCCESS =", TemeshovaLoadState.SUCCESS.value)
 print("ERROR =", TemeshovaLoadState.ERROR.value)
 print("Количество состояний LoadState:", len(TemeshovaLoadState))
 print("Мощность Result[list[User], str]: счётно бесконечна")
+ 
